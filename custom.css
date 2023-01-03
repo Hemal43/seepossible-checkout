@@ -75,6 +75,21 @@ img{max-width: 100%;}
 .tab-content-group .checkout-form .back-btn a{color: #c39990;font-size: 14px;position: relative;padding-left: 15px;background-image: url('images/left-arrow.png');background-repeat: no-repeat;background-size: 6px;background-position: left center;transition: all 0.2s ease-in-out}
 .tab-content-group .checkout-form .back-btn a:hover{padding-left: 25px;padding-right:10px;}
 
+.checkout-faq{padding-bottom: 100px;padding-top: 50px;}
+.checkout-faq .faq-header{border-top: 1px solid #ccc;padding-top: 30px;padding-bottom: 30px;}
+.checkout-faq .faq-header h2{font-size: 30px;}
+.checkout-faq .clsoe-icon{width: 20px;display: flex;align-items: center;cursor: pointer;}
+.checkout-faq .clsoe-icon svg{width: 100%;}
+.checkout-faq .faq-row{border-top:1px solid #ccc; }
+.checkout-faq .faq-question{padding: 15px 0px;cursor: pointer;} 
+.checkout-faq .faq-question h5{font-size: 16px;font-weight: 600;position: relative;}
+.checkout-faq .faq-question h5 span{position: absolute;width: 16px;height: 16px;display:flex;align-items: center;justify-content: center;right: 0px;top: 2px;transform: rotate(0deg);transition: all 0.2s ease-in-out;}
+.checkout-faq .faq-question h5 span:after{content: "";width: 100%;height: 2px;display: block;position: absolute;background-color: #333;}
+.checkout-faq .faq-question h5 span:before{content: "";width:2px;height: 16px;display: block;position: absolute;background-color: #333;}
+.checkout-faq .faq-question h5.minus span{transform: rotate(45deg);}
+.checkout-faq .answer-wrap{padding:20px 0px 30px;font-size: 14px;color: #666;line-height: 1.4;}
+.checkout-faq .faq-answer{display: none;}
+
 .checkout-page .checkout-tab-section .tab-option .option-wrap{display:flex;align-items:center;justify-content:center;}
 .checkout-page .checkout-tab-section .tab-option .option-wrap svg{width:25px;height:25px;margin-right:10px;}
 .checkout-page .tab-form-group{background: #fafafa;padding: 15px 0px;}

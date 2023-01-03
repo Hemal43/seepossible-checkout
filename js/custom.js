@@ -17,11 +17,27 @@ $('input').on('change keyup', function() {
 });
 
 
-
 $(document).ready(function() {
+  $(".faq-row .faq-question").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).siblings(".faq-answer").slideUp(200);
+      $(".faq-row .faq-question h5").removeClass("minus").addClass("plus");
+    } else {
+      $(".faq-row .faq-question h5").removeClass("minus").addClass("plus");
+      $(this).find("h5").removeClass("plus").addClass("minus");
+      $(".faq-row .faq-question").removeClass("active");
+      $(this).addClass("active");
+      $(".faq-answer").slideUp(200);
+      $(this).siblings(".faq-answer").slideDown(200);
+    }
+  });
 
-
-   $('.tab-header .tab-option').click(function(){
+  $(".faq-header .clsoe-icon").click(function(){
+    $(".checkout-faq").hide();
+  });
+ 
+  $('.tab-header .tab-option').click(function(){
     var tab_id = $(this).attr('data-tab');
     $('.tab-header .tab-option').removeClass('active');
     $('.tab-content').removeClass('active');
