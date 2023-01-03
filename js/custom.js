@@ -36,8 +36,13 @@ $(document).ready(function() {
   $(".faq-header .clsoe-icon").click(function(){
     $(".checkout-faq").hide();
   });
- 
-  $('.tab-header .tab-option').click(function(){
+
+  $(".promo-text .redeem").click(function(){
+    $(".promocode-form").slideToggle();
+    $(this).toggleClass('active'); 
+  });
+
+   $('.tab-header .tab-option').click(function(){
     var tab_id = $(this).attr('data-tab');
     $('.tab-header .tab-option').removeClass('active');
     $('.tab-content').removeClass('active');
